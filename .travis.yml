@@ -1,0 +1,12 @@
+language: python
+dist: xenial
+before_install:
+- cd ./app
+install:
+- pip install -r requirements.txt
+script:
+- pytest
+
+deploy:
+  api_key:
+    secure: CkIgqF38DTulI8DmcKuvZVEekAVo7A67/ItsWkLPk7sRAlk21MEdW512/v4FBNiCqCC7Nh05QmyvQZugPRA3YiIduIqjPc/joCxBOfrIzv5WoAmH/t8hWJFGx4qLIVphy3VCKZIxxA9fDoXtlvZDMxgYI+/zx9NK4rugSgwjMmCaCzeB8OdeHXYfSow2dhN/wbO4Ig4LDavXncLy0J8SA0rGb678YQ5ByYeqvOLQPuk+ixVS2VXYhUMiko3tJozAefnRlt9IIVmK+yHdgmjuwa8V/SB9ATmAwgpNZbwKGOI10y0wJKWH7MVOXyHPZRRELJfH4i172984VC3eyzXTxVHXoHt4wl+wF6stKhIkElXc7RM1oL//dkbSMR3F5+Zq6QTvaQ9ak0Z/8j812FAN2Agomgq1wpjePESX7dPcLDsjpCNEOM//20U+x5N67YAfXLhO876nKSv8gTLqxAt5FoLDM4y+8/2ZwN/B8vutIIeQsH5GxDXw5Jkbf9MGmbkeV36VkoD2QWTM8iwRwaFDa0W51RmP+KSytWzrXsh3whOi6Z54a6+4AW3yB9y9YGVbIPx4Qi8ybFfiQSh+q5tnGImJlDRmASqHXS6X+ins7e0sriEVSB8DxsirsiXBsEjxH0GeM+SI629KInDArSWQXZCJmx8U7RQhCA9NmoYpRGo=
